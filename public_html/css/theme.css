@@ -4217,7 +4217,7 @@ fieldset:disabled .btn {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+  --bs-navbar-color: #1E1E1E;
   --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
   --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
   --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
@@ -12476,6 +12476,52 @@ img {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
+}
+
+header .navbar-brand {
+  max-width: 40%;
+}
+
+header .navbar-toggler span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #ECD9D9;
+}
+
+header .navbar-toggler span:last-of-type {
+  margin-bottom: 0;
+}
+
+header .navbar-nav a {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+  border-bottom: 1px solid #FFF;
+  padding: 10px 0 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header .navbar-nav a.active, header .navbar-nav a:hover {
+  border-bottom: 1px solid #ECD9D9;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  header .navbar-brand img {
+    max-width: 50%;
+  }
+  header .navbar-nav li {
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .navbar-nav li {
+    margin-left: 72px;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
