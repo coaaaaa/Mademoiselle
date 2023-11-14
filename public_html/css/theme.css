@@ -12537,4 +12537,52 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
   }
 }
 
+.trends-section {
+  padding: 75px 0 56px;
+}
+
+.trends-section .trend-title {
+  font-family: "Bodoni", sans-serif;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.trends-section .trend-title:after {
+  content: '';
+  height: 1px;
+  width: 74px;
+  background-color: #ECD9D9;
+  display: block;
+  position: relative;
+  margin-top: 2.2rem;
+  margin-bottom: 4.3rem;
+}
+
+.trends-section .trend {
+  position: relative;
+}
+
+.trends-section .trend .trend-content {
+  padding: 22px 18px;
+  background: #FFF;
+  position: absolute;
+  top: 16.4rem;
+  left: 3rem;
+  right: 3rem;
+}
+
+.trends-section .trend .news-title {
+  text-transform: uppercase;
+  line-height: 2.4rem;
+}
+
+.trends-section .trend .news-date {
+  text-align: center;
+  font-family: "Bodoni", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-style: italic;
+}
+
 /*# sourceMappingURL=theme.css.map */

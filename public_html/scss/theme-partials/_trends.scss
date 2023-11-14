@@ -1,0 +1,49 @@
+$trend-section-title: $bodoni;
+
+.trends-section{
+    padding: 75px 0 56px;
+
+    .trend-title{
+        font-family: $trend-section-title;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .trend-title:after{
+        content:'';
+        height: 1px;
+        width: 74px;
+        background-color: $primary;
+        display: block;
+        position: relative;
+        margin-top: 2.2rem;
+        margin-bottom: 4.3rem;
+    }
+
+    .trend{
+        position: relative;
+        
+        .trend-content{
+            padding: 22px 18px;
+            background: #FFF;
+            position: absolute;
+            top: 16.4rem;
+            left: 3rem;
+            right: 3rem;
+        }
+        .news-title{
+            text-transform: uppercase;
+            line-height: 2.4rem;
+        }
+
+        .news-date{
+            text-align: center;
+            font-family: $trend-section-title;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            font-style: italic;
+        }
+    }
+
+}
