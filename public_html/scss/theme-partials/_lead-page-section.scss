@@ -1,0 +1,27 @@
+$lead-page-font: $bodoni;
+
+
+.lead-page-section{
+    padding: 218px 0 269px;
+    background-size: cover;
+
+    .lead-section-title{
+        font-family: $lead-page-font;
+        font-size: 3rem;
+        line-height: 4.2rem;
+        letter-spacing: 1rem;
+    }
+}
+
+
+@media (min-width:768px){
+    .lead-page-section{
+        .lead-section-title{
+            font-family: $lead-page-font;
+            font-size: 6rem;
+            line-height: 8.4rem;
+            letter-spacing: 2rem;
+        }
+    }
+
+}
