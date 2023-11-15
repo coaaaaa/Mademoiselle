@@ -1,0 +1,39 @@
+$team-section-title: $bodoni;
+
+
+.team-section{
+    padding:0 67px;
+    
+    
+    .team-content{    
+        border: 1px solid $primary;
+        padding: 54px 0;
+    }
+    
+    .team-title{
+        font-family: $team-section-title;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .team-title:after{
+        content:'';
+        height: 1px;
+        width: 74px;
+        background-color: $primary;
+        display: block;
+        position: relative;
+        margin-top: 2.2rem;
+        margin-bottom: 4.3rem;
+    }
+    .team-member-title{
+        font-size: 3rem;
+        line-height: 2.7rem;
+    }
+    
+    .team-member-info{
+        line-height: 2.3rem;
+    }
+    
+}

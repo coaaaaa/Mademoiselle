@@ -1,7 +1,7 @@
 $trend-section-title: $bodoni;
 
 .trends-section{
-    padding: 75px 0 56px;
+    padding: 75px 0 0;
 
     .trend-title{
         font-family: $trend-section-title;
@@ -23,12 +23,12 @@ $trend-section-title: $bodoni;
 
     .trend{
         position: relative;
-        
+
         .trend-content{
             padding: 22px 18px;
             background: #FFF;
             position: absolute;
-            top: 16.4rem;
+            top: 15.4rem;
             left: 3rem;
             right: 3rem;
         }
@@ -47,3 +47,52 @@ $trend-section-title: $bodoni;
     }
 
 }
+
+@media (min-width: 500px){
+    .trends-section{
+        .trend{
+            .trend-content{
+                padding: 22px 18px;
+                background: #FFF;
+                position: absolute;
+                top: 23.4rem;
+                left: 3rem;
+                right: 3rem;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 568px){
+    .trends-section{
+        .trend{
+            .trend-content{
+                padding: 22px 18px;
+                background: #FFF;
+                position: absolute;
+                top: 28.4rem;
+                left: 3rem;
+                right: 3rem;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px){
+    .trends-section{
+        padding: 75px 0 0px;
+        
+        .trend{
+            .trend-content{
+                padding: 22px 18px;
+                background: #FFF;
+                position: absolute;
+                top: 15.4rem;
+                left: 2rem;
+                right: 2rem;
+            }
+        }
+    }
+    }
