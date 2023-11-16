@@ -3,18 +3,18 @@ $team-section-title: $bodoni;
 
 .team-section{
     padding:0 67px;
-    
-    
-    .team-content{    
+
+
+    .team-content{
         border: 1px solid $primary;
         padding: 54px 0;
     }
-    
+
     .team-title{
         font-family: $team-section-title;
         font-size: 3rem;
         line-height: 4.5rem;
-        letter-spacing: 0.5rem;
+        letter-spacing: 0.1rem;
     }
 
     .team-title:after{
@@ -31,9 +31,20 @@ $team-section-title: $bodoni;
         font-size: 3rem;
         line-height: 2.7rem;
     }
-    
+
     .team-member-info{
         line-height: 2.3rem;
     }
-    
+
+}
+
+@media (min-width:576px){
+    .team-section{
+        .team-title{
+            font-family: $team-section-title;
+            font-size: 3rem;
+            line-height: 4.5rem;
+            letter-spacing: 0.1rem;
+        }
+    }
 }
