@@ -1,0 +1,23 @@
+
+.services-single{
+    padding: 100px 20px 0;
+
+    .services-title{
+        font-family: $lato;
+        font-size: 4.4rem;
+        line-height: 5rem;
+        margin-bottom: 3.6rem;
+    }
+
+    .services-description{
+        font-weight: $font-weight-light;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+}
+
+@media (min-width: 992px){
+    .services-single{
+        padding: 170px 0;
+    }
+}
