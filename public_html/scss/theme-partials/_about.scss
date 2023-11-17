@@ -1,0 +1,50 @@
+
+.about-page-section{
+    padding: 284px 0;
+    background-size: cover;
+    background-position: center center;
+
+    .about-section-title{
+        font-family: $bodoni;
+        font-size: 6rem;
+        line-height: 8.4rem;
+        letter-spacing: 2rem;
+    }
+}
+
+.about-item-section{
+    padding: 91px 0;
+
+    .search{
+        input{
+            padding: 7px 95px 7px 15px;
+        }
+
+        input.search-bar{
+            width: 368px;
+            border: 1px solid $gray-900;
+            display: block;
+            padding: 10px 0 10px 15px;
+            font-family: $bodoni;
+            font-style: italic;
+            background: url("https://icons8.com/icon/132/search") no-repeat 13px;
+        }
+    }
+
+    .trend{
+        position: relative;
+        padding-bottom: 30px;
+        
+        .about-content{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            text-transform: uppercase;
+            padding: 22px 18px;
+            background: #FFF;
+            position: absolute;
+            top: 15.4rem;
+            left: 3rem;
+            right: 3rem;
+        }
+    }
+}

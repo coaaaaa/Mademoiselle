@@ -13537,7 +13537,6 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
 
 .lead-page-section {
   padding: 218px 0 269px;
-  background-size: cover;
 }
 
 .lead-page-section .lead-section-title {
@@ -13582,7 +13581,12 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
   position: relative;
 }
 
-.trends-section .trend .trend-content {
+.trends-section .trend a {
+  text-decoration: none;
+  color: #1E1E1E;
+}
+
+.trends-section .trend a .trend-content {
   padding: 22px 18px;
   background: #FFF;
   position: absolute;
@@ -13591,12 +13595,12 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
   right: 3rem;
 }
 
-.trends-section .trend .news-title {
+.trends-section .trend a .news-title {
   text-transform: uppercase;
   line-height: 2.4rem;
 }
 
-.trends-section .trend .news-date {
+.trends-section .trend a .news-date {
   text-align: center;
   font-family: "Bodoni", sans-serif;
   font-size: 1.4rem;
@@ -13641,7 +13645,7 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
 }
 
 .services-section {
-  padding: 56px 0 111px;
+  padding: 56px 0 37px;
 }
 
 .services-section .services-title {
@@ -13836,6 +13840,122 @@ footer .copyright a {
     left: 2rem;
     right: 2rem;
   }
+}
+
+.blog-single {
+  padding: 100px 0 40px;
+}
+
+.blog-single .blog-item .blog-title {
+  font-size: 4.4rem;
+  line-height: 5rem;
+}
+
+.blog-single .blog-item .category {
+  font-family: "Bodoni", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+.blog-single .blog-item .date-published {
+  font-family: "Bodoni", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-style: italic;
+}
+
+.blog-single .blog-item .blog-description {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+.blog-single-content {
+  padding: 0 0 100px;
+}
+
+.blog-single-content .blog-single-item {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  text-align: justify;
+}
+
+.blog-single-content .blog-single-item img {
+  padding: 30px 0;
+}
+
+.blog-single-content .news-tags .tag-title {
+  font-family: "Bodoni", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  font-style: italic;
+}
+
+.blog-single-content .news-tags .tags {
+  font-family: "Bodoni", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+}
+
+.blog-single-content .news-tags .tags .btn {
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .blog-single {
+    padding: 165px 0 97px;
+  }
+  .blog-single-content .blog-single-item img {
+    padding: 52px 0;
+  }
+}
+
+.about-page-section {
+  padding: 284px 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+.about-page-section .about-section-title {
+  font-family: "Bodoni", sans-serif;
+  font-size: 6rem;
+  line-height: 8.4rem;
+  letter-spacing: 2rem;
+}
+
+.about-item-section {
+  padding: 91px 0;
+}
+
+.about-item-section .search input {
+  padding: 7px 95px 7px 15px;
+}
+
+.about-item-section .search input.search-bar {
+  width: 368px;
+  border: 1px solid #1E1E1E;
+  display: block;
+  padding: 10px 0 10px 15px;
+  font-family: "Bodoni", sans-serif;
+  font-style: italic;
+  background: url("https://icons8.com/icon/132/search") no-repeat 13px;
+}
+
+.about-item-section .trend {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.about-item-section .trend .about-content {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  padding: 22px 18px;
+  background: #FFF;
+  position: absolute;
+  top: 15.4rem;
+  left: 3rem;
+  right: 3rem;
 }
 
 /*# sourceMappingURL=theme.css.map */

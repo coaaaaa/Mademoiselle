@@ -24,28 +24,33 @@ $trend-section-title: $bodoni;
     .trend{
         position: relative;
 
-        .trend-content{
-            padding: 22px 18px;
-            background: #FFF;
-            position: absolute;
-            top: 15.4rem;
-            left: 3rem;
-            right: 3rem;
-        }
-        .news-title{
-            text-transform: uppercase;
-            line-height: 2.4rem;
+        a{
+            text-decoration: none;
+            color: $gray-900;
+
+            .trend-content{
+                padding: 22px 18px;
+                background: #FFF;
+                position: absolute;
+                top: 15.4rem;
+                left: 3rem;
+                right: 3rem;
+            }
+            .news-title{
+                text-transform: uppercase;
+                line-height: 2.4rem;
+            }
+
+            .news-date{
+                text-align: center;
+                font-family: $trend-section-title;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                font-style: italic;
+            }
         }
 
-        .news-date{
-            text-align: center;
-            font-family: $trend-section-title;
-            font-size: 1.4rem;
-            line-height: 1.7rem;
-            font-style: italic;
-        }
     }
-
 }
 
 @media (min-width: 500px){
@@ -83,7 +88,7 @@ $trend-section-title: $bodoni;
 @media (min-width: 768px){
     .trends-section{
         padding: 75px 0 0px;
-        
+
         .trend{
             .trend-content{
                 padding: 22px 18px;
@@ -95,4 +100,4 @@ $trend-section-title: $bodoni;
             }
         }
     }
-    }
+}

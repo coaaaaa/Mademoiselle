@@ -1,0 +1,82 @@
+
+
+.blog-single{
+    padding: 100px 0 40px;
+
+    .blog-item{
+        .blog-title{
+            font-size: 4.4rem;
+            line-height: 5rem;
+        }
+
+        .category{
+            font-family: $bodoni;
+            font-weight: $font-weight-bold;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+        }
+
+        .date-published{
+            font-family: $bodoni;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            font-style: italic;
+        }
+
+        .blog-description{
+            font-size: 2rem;
+            line-height: 2.8rem;
+        }
+    }
+}
+
+.blog-single-content{
+
+    padding: 0 0 100px;
+    // u invisionu je 273px donji padding, onda izgleda mnogo udaljen footer
+
+    .blog-single-item{
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        text-align: justify;
+
+        img{
+            padding: 30px 0;
+        }
+    }
+
+    .news-tags{
+        .tag-title{
+            font-family: $bodoni;
+            font-size: 1.6rem;
+            line-height: 2.7rem;
+            font-style: italic;
+        }
+
+        .tags{
+            font-family: $bodoni;
+            font-size: 1.6rem;
+            line-height: 2.7rem;
+
+            .btn{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .blog-single{
+        padding: 165px 0 97px;
+    }
+
+    .blog-single-content{
+        .blog-single-item{
+
+            img{
+                padding: 52px 0;
+            }
+        }
+    }
+}
