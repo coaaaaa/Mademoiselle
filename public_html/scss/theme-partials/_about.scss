@@ -1,6 +1,6 @@
 
 .about-page-section{
-    padding: 284px 0;
+    padding: 284px 0 143px;
     background-size: cover;
     background-position: center center;
 
@@ -13,38 +13,123 @@
 }
 
 .about-item-section{
-    padding: 91px 0;
+    padding: 91px 0 0;
+
+    h2{
+        font-size: 4.4rem;
+        line-height: 5rem;
+    }
 
     .search{
-        input{
-            padding: 7px 95px 7px 15px;
-        }
+        padding-bottom: 43px;
+        text-align: center;
 
-        input.search-bar{
-            width: 368px;
+        .form-control {
+            padding: 21px 0px 17px 27px;
+            width: 340px;
             border: 1px solid $gray-900;
             display: block;
-            padding: 10px 0 10px 15px;
             font-family: $bodoni;
             font-style: italic;
-            background: url("https://icons8.com/icon/132/search") no-repeat 13px;
         }
     }
 
     .trend{
         position: relative;
         padding-bottom: 30px;
-        
+        font-size: 2rem;
+        line-height: 2.8rem;
+        overflow: hidden;
+        img{
+            transition: 1s linear;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+
         .about-content{
             font-size: 1.6rem;
             line-height: 2.4rem;
             text-transform: uppercase;
-            padding: 22px 18px;
+            padding: 20px 0px;
             background: #FFF;
             position: absolute;
             top: 15.4rem;
-            left: 3rem;
-            right: 3rem;
+            left: 1rem;
+            right: 1rem;
+        }
+    }
+
+    .image-cover{
+        padding: 29px 0;
+    }
+}
+
+@media (min-width:500px){
+    .about-item-section{
+        .search{
+            .form-control {
+                width: 340px;
+            }
+        }
+        .trend{
+            .about-content{
+                top: 25.4rem;
+                left: 3rem;
+                right: 3rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px){
+
+    .about-item-section{
+        .trend{
+            .about-content{
+                top: 28.4rem;
+                left: 3rem;
+                right: 3rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .about-item-section{
+        .trend{
+            .about-content{
+                top: 38.4rem;
+                left: 3rem;
+                right: 3rem;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 992px){
+    .about-item-section{
+        .trend{
+            .about-content{
+                top: 11.4rem;
+                left: 2rem;
+                right: 2rem;
+                padding: 18px 0px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    .about-item-section{
+        .trend{
+            .about-content{
+                top: 16.4rem;
+                left: 2rem;
+                right: 2rem;
+                padding: 20px 18px;
+            }
         }
     }
 }

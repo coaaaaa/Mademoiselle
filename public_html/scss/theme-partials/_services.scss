@@ -23,7 +23,12 @@ $services-title: $bodoni;
 
     .services-content-item{
         padding: 20px 20px;
-
+        img{
+            transition: 1s linear;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
         h1{
             font-size: 3rem !important;
             line-height: 4rem;
@@ -35,6 +40,10 @@ $services-title: $bodoni;
             font-family: 'lato';
             padding: 13px 36px;
             background-color: transparent;
+
+            &:hover{
+                opacity: 0.5;
+            }
         }
     }
 
@@ -52,7 +61,7 @@ $services-title: $bodoni;
 
         .services-content-item{
             padding: 30px 30px;
-            
+
             h1{
                 font-size: 3rem !important;
             }
@@ -62,10 +71,10 @@ $services-title: $bodoni;
 
 @media (min-width: 992px){
     .services-section{
-        
+
         .services-content-item{
             padding: 75px 60px 0;
-            
+
             h1{
                 font-size: 3.6rem !important;
             }
@@ -75,7 +84,7 @@ $services-title: $bodoni;
 
 @media (min-width: 1200px){
     .services-section{
-        
+
         .services-content-item{
             padding: 143px 95px 0px;
         }

@@ -13537,6 +13537,8 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
 
 .lead-page-section {
   padding: 218px 0 269px;
+  background-size: cover;
+  background-position: center center;
 }
 
 .lead-page-section .lead-section-title {
@@ -13579,6 +13581,15 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
 
 .trends-section .trend {
   position: relative;
+  overflow: hidden;
+}
+
+.trends-section .trend img {
+  transition: 1s linear;
+}
+
+.trends-section .trend img:hover {
+  transform: scale(1.05);
 }
 
 .trends-section .trend a {
@@ -13590,9 +13601,9 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
   padding: 22px 18px;
   background: #FFF;
   position: absolute;
-  top: 15.4rem;
-  left: 3rem;
-  right: 3rem;
+  top: 14.4rem;
+  left: 2rem;
+  right: 2rem;
 }
 
 .trends-section .trend a .news-title {
@@ -13609,24 +13620,24 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
 }
 
 @media (min-width: 500px) {
-  .trends-section .trend .trend-content {
+  .trends-section .trend a .trend-content {
     padding: 22px 18px;
     background: #FFF;
     position: absolute;
-    top: 23.4rem;
+    top: 24.4rem;
     left: 3rem;
     right: 3rem;
   }
 }
 
 @media (min-width: 568px) {
-  .trends-section .trend .trend-content {
+  .trends-section .trend a .trend-content {
     padding: 22px 18px;
     background: #FFF;
     position: absolute;
     top: 28.4rem;
-    left: 3rem;
-    right: 3rem;
+    left: 2rem;
+    right: 2rem;
   }
 }
 
@@ -13634,7 +13645,7 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
   .trends-section {
     padding: 75px 0 0px;
   }
-  .trends-section .trend .trend-content {
+  .trends-section .trend a .trend-content {
     padding: 22px 18px;
     background: #FFF;
     position: absolute;
@@ -13670,6 +13681,14 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
   padding: 20px 20px;
 }
 
+.services-section .services-content-item img {
+  transition: 1s linear;
+}
+
+.services-section .services-content-item img:hover {
+  transform: scale(1.05);
+}
+
 .services-section .services-content-item h1, .services-section .services-content-item .h1 {
   font-size: 3rem !important;
   line-height: 4rem;
@@ -13681,6 +13700,10 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
   font-family: 'lato';
   padding: 13px 36px;
   background-color: transparent;
+}
+
+.services-section .services-content-item .learn-more:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {
@@ -13804,8 +13827,17 @@ footer .copyright a {
 
 @media (min-width: 992px) {
   .services-single {
-    padding: 170px 0;
+    padding: 100px 0;
   }
+}
+
+.trends-section .trend .trend-content {
+  padding: 15px 18px;
+  background: #FFF;
+  position: absolute;
+  top: 24.4rem;
+  left: 2rem;
+  right: 2rem;
 }
 
 .page-pagination {
@@ -13820,20 +13852,53 @@ footer .copyright a {
   border: none;
 }
 
-@media (min-width: 992px) {
-  .trends-section .trend .trend-content {
-    padding: 15px 18px;
+@media (min-width: 500px) {
+  .trends-section .trend a .trend-content {
+    padding: 18px 18px;
     background: #FFF;
     position: absolute;
-    top: 12rem;
-    left: 0.5rem;
-    right: 0.5rem;
+    top: 24.4rem;
+    left: 2rem;
+    right: 2rem;
+  }
+}
+
+@media (min-width: 568px) {
+  .trends-section .trend a .trend-content {
+    padding: 12px 6px;
+    background: #FFF;
+    position: absolute;
+    top: 30.4rem;
+    left: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .trends-section .trend a .trend-content {
+    padding: 12px 6px;
+    background: #FFF;
+    position: absolute;
+    top: 16.4rem;
+    left: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .trends-section .trend a .trend-content {
+    padding: 12px 11px;
+    background: #FFF;
+    position: absolute;
+    top: 12.4rem;
+    left: 1rem;
+    right: 1rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .trends-section .trend .trend-content {
-    padding: 22px 18px;
+  .trends-section .trend a .trend-content {
+    padding: 22px 10px;
     background: #FFF;
     position: absolute;
     top: 15.4rem;
@@ -13911,7 +13976,7 @@ footer .copyright a {
 }
 
 .about-page-section {
-  padding: 284px 0;
+  padding: 284px 0 143px;
   background-size: cover;
   background-position: center center;
 }
@@ -13924,38 +13989,197 @@ footer .copyright a {
 }
 
 .about-item-section {
-  padding: 91px 0;
+  padding: 91px 0 0;
 }
 
-.about-item-section .search input {
-  padding: 7px 95px 7px 15px;
+.about-item-section h2, .about-item-section .h2 {
+  font-size: 4.4rem;
+  line-height: 5rem;
 }
 
-.about-item-section .search input.search-bar {
-  width: 368px;
+.about-item-section .search {
+  padding-bottom: 43px;
+  text-align: center;
+}
+
+.about-item-section .search .form-control {
+  padding: 21px 0px 17px 27px;
+  width: 340px;
   border: 1px solid #1E1E1E;
   display: block;
-  padding: 10px 0 10px 15px;
   font-family: "Bodoni", sans-serif;
   font-style: italic;
-  background: url("https://icons8.com/icon/132/search") no-repeat 13px;
 }
 
 .about-item-section .trend {
   position: relative;
   padding-bottom: 30px;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  overflow: hidden;
+}
+
+.about-item-section .trend img {
+  transition: 1s linear;
+}
+
+.about-item-section .trend img:hover {
+  transform: scale(1.05);
 }
 
 .about-item-section .trend .about-content {
   font-size: 1.6rem;
   line-height: 2.4rem;
   text-transform: uppercase;
-  padding: 22px 18px;
+  padding: 20px 0px;
   background: #FFF;
   position: absolute;
   top: 15.4rem;
-  left: 3rem;
-  right: 3rem;
+  left: 1rem;
+  right: 1rem;
+}
+
+.about-item-section .image-cover {
+  padding: 29px 0;
+}
+
+@media (min-width: 500px) {
+  .about-item-section .search .form-control {
+    width: 340px;
+  }
+  .about-item-section .trend .about-content {
+    top: 25.4rem;
+    left: 3rem;
+    right: 3rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .about-item-section .trend .about-content {
+    top: 28.4rem;
+    left: 3rem;
+    right: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-item-section .trend .about-content {
+    top: 38.4rem;
+    left: 3rem;
+    right: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-item-section .trend .about-content {
+    top: 11.4rem;
+    left: 2rem;
+    right: 2rem;
+    padding: 18px 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-item-section .trend .about-content {
+    top: 16.4rem;
+    left: 2rem;
+    right: 2rem;
+    padding: 20px 18px;
+  }
+}
+
+.contact-page-section {
+  padding: 104px 0 110px;
+}
+
+.contact-page-section .contact-title {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.5rem;
+  font-family: "Bodoni", sans-serif;
+}
+
+.contact-page-section .form-group {
+  margin-bottom: 19px;
+}
+
+.contact-page-section .form-group .form-control {
+  line-height: 25px;
+  font-weight: 300;
+  padding: 12px 7px 12px 19px;
+  background-color: rgba(37, 61, 97, 0.02);
+  border-radius: 0;
+  border: none;
+}
+
+.contact-page-section .form-group textarea {
+  padding: 12px 7px 12px 19px;
+  background-color: rgba #253D61, 0.02;
+  border-radius: 0;
+  border: 0;
+  resize: none;
+}
+
+.contact-page-section .form-group button {
+  border: 1px solid #000;
+  border-radius: 0;
+}
+
+.info-section {
+  padding: 63px 0;
+}
+
+.info-section p, .info-section a {
+  color: #1E1E1E;
+  text-decoration: none;
+  font-size: 2.4rem;
+  line-height: 2.5rem;
+}
+
+.error-page-section {
+  padding: 150px 0;
+  background-size: cover;
+  background-position: 100% auto;
+}
+
+.error-page-section h1, .error-page-section .h1 {
+  font-family: "Bodoni", sans-serif;
+  font-size: 5rem;
+  line-height: 6.4rem;
+  letter-spacing: 1rem;
+}
+
+.error-page-section a {
+  color: #fff;
+  border: 1px solid #FFF;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+@media (min-width: 568px) {
+  .error-page-section {
+    padding: 277px 0;
+    background-size: cover;
+    background-position: 100% auto;
+  }
+  .error-page-section h1, .error-page-section .h1 {
+    font-family: "Bodoni", sans-serif;
+    font-size: 6rem;
+    line-height: 8.4rem;
+    letter-spacing: 2rem;
+  }
+  .error-page-section a {
+    color: #fff;
+    border: 1px solid #FFF;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    font-weight: 400;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */

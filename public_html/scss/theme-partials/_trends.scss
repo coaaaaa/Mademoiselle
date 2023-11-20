@@ -23,6 +23,13 @@ $trend-section-title: $bodoni;
 
     .trend{
         position: relative;
+        overflow: hidden;
+        img{
+            transition: 1s linear;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
 
         a{
             text-decoration: none;
@@ -32,9 +39,9 @@ $trend-section-title: $bodoni;
                 padding: 22px 18px;
                 background: #FFF;
                 position: absolute;
-                top: 15.4rem;
-                left: 3rem;
-                right: 3rem;
+                top: 14.4rem;
+                left: 2rem;
+                right: 2rem;
             }
             .news-title{
                 text-transform: uppercase;
@@ -56,13 +63,15 @@ $trend-section-title: $bodoni;
 @media (min-width: 500px){
     .trends-section{
         .trend{
-            .trend-content{
-                padding: 22px 18px;
-                background: #FFF;
-                position: absolute;
-                top: 23.4rem;
-                left: 3rem;
-                right: 3rem;
+            a{
+                .trend-content{
+                    padding: 22px 18px;
+                    background: #FFF;
+                    position: absolute;
+                    top: 24.4rem;
+                    left: 3rem;
+                    right: 3rem;
+                }
             }
         }
     }
@@ -72,13 +81,15 @@ $trend-section-title: $bodoni;
 @media (min-width: 568px){
     .trends-section{
         .trend{
-            .trend-content{
-                padding: 22px 18px;
-                background: #FFF;
-                position: absolute;
-                top: 28.4rem;
-                left: 3rem;
-                right: 3rem;
+            a{
+                .trend-content{
+                    padding: 22px 18px;
+                    background: #FFF;
+                    position: absolute;
+                    top: 28.4rem;
+                    left: 2rem;
+                    right: 2rem;
+                }
             }
         }
     }
@@ -88,15 +99,16 @@ $trend-section-title: $bodoni;
 @media (min-width: 768px){
     .trends-section{
         padding: 75px 0 0px;
-
         .trend{
-            .trend-content{
-                padding: 22px 18px;
-                background: #FFF;
-                position: absolute;
-                top: 15.4rem;
-                left: 2rem;
-                right: 2rem;
+            a{
+                .trend-content{
+                    padding: 22px 18px;
+                    background: #FFF;
+                    position: absolute;
+                    top: 15.4rem;
+                    left: 2rem;
+                    right: 2rem;
+                }
             }
         }
     }
