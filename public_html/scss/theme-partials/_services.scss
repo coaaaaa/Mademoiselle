@@ -49,6 +49,17 @@ $services-title: $bodoni;
 
 }
 
+@media (min-width: 576px){
+    .lead-page-section{
+        .lead-section-title{
+            font-family: "Bodoni", sans-serif;
+            font-size: 6rem;
+            line-height: 8.4rem;
+            letter-spacing: 2rem;
+        }
+    }
+}
+
 @media (min-width: 768px){
     .services-section{
 

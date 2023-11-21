@@ -19,6 +19,11 @@
         letter-spacing: 0.5px;
         text-decoration: none;
         font-weight: $font-weight-normal;
+        
+        &:hover{
+            background-color: $primary;
+            color: $gray-900;
+        }
     }
 }
 

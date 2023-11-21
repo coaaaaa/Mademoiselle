@@ -13543,7 +13543,7 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
 
 .lead-page-section .lead-section-title {
   font-family: "Bodoni", sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 4.2rem;
   letter-spacing: 1rem;
 }
@@ -13619,42 +13619,6 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
   font-style: italic;
 }
 
-@media (min-width: 500px) {
-  .trends-section .trend a .trend-content {
-    padding: 22px 18px;
-    background: #FFF;
-    position: absolute;
-    top: 24.4rem;
-    left: 3rem;
-    right: 3rem;
-  }
-}
-
-@media (min-width: 568px) {
-  .trends-section .trend a .trend-content {
-    padding: 22px 18px;
-    background: #FFF;
-    position: absolute;
-    top: 28.4rem;
-    left: 2rem;
-    right: 2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .trends-section {
-    padding: 75px 0 0px;
-  }
-  .trends-section .trend a .trend-content {
-    padding: 22px 18px;
-    background: #FFF;
-    position: absolute;
-    top: 15.4rem;
-    left: 2rem;
-    right: 2rem;
-  }
-}
-
 .services-section {
   padding: 56px 0 37px;
 }
@@ -13704,6 +13668,15 @@ header .navbar-nav a.active, header .navbar-nav a:hover {
 
 .services-section .services-content-item .learn-more:hover {
   opacity: 0.5;
+}
+
+@media (min-width: 576px) {
+  .lead-page-section .lead-section-title {
+    font-family: "Bodoni", sans-serif;
+    font-size: 6rem;
+    line-height: 8.4rem;
+    letter-spacing: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -13857,7 +13830,7 @@ footer .copyright a {
     padding: 18px 18px;
     background: #FFF;
     position: absolute;
-    top: 24.4rem;
+    top: 23.4rem;
     left: 2rem;
     right: 2rem;
   }
@@ -13868,7 +13841,7 @@ footer .copyright a {
     padding: 12px 6px;
     background: #FFF;
     position: absolute;
-    top: 30.4rem;
+    top: 27.4rem;
     left: 1rem;
     right: 1rem;
   }
@@ -13879,7 +13852,7 @@ footer .copyright a {
     padding: 12px 6px;
     background: #FFF;
     position: absolute;
-    top: 16.4rem;
+    top: 15rem;
     left: 1rem;
     right: 1rem;
   }
@@ -13887,10 +13860,10 @@ footer .copyright a {
 
 @media (min-width: 992px) {
   .trends-section .trend a .trend-content {
-    padding: 12px 11px;
+    padding: 10px 5px;
     background: #FFF;
     position: absolute;
-    top: 12.4rem;
+    top: 10.4rem;
     left: 1rem;
     right: 1rem;
   }
@@ -14027,10 +14000,12 @@ footer .copyright a {
   transform: scale(1.05);
 }
 
-.about-item-section .trend .about-content {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  text-transform: uppercase;
+.about-item-section .trend a {
+  text-decoration: none;
+  color: #1E1E1E;
+}
+
+.about-item-section .trend a .about-content {
   padding: 20px 0px;
   background: #FFF;
   position: absolute;
@@ -14039,7 +14014,21 @@ footer .copyright a {
   right: 1rem;
 }
 
-.about-item-section .image-cover {
+.about-item-section .trend a .about-content .news-title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  line-height: 2.4rem;
+}
+
+.about-item-section .trend a .about-content .news-date {
+  text-align: center;
+  font-family: "Bodoni", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-style: italic;
+}
+
+.about-item-section .trend .image-cover {
   padding: 29px 0;
 }
 
@@ -14047,7 +14036,7 @@ footer .copyright a {
   .about-item-section .search .form-control {
     width: 340px;
   }
-  .about-item-section .trend .about-content {
+  .about-item-section .trend a .about-content {
     top: 25.4rem;
     left: 3rem;
     right: 3rem;
@@ -14055,7 +14044,7 @@ footer .copyright a {
 }
 
 @media (min-width: 576px) {
-  .about-item-section .trend .about-content {
+  .about-item-section .trend a .about-content {
     top: 28.4rem;
     left: 3rem;
     right: 3rem;
@@ -14063,7 +14052,7 @@ footer .copyright a {
 }
 
 @media (min-width: 768px) {
-  .about-item-section .trend .about-content {
+  .about-item-section .trend a .about-content {
     top: 38.4rem;
     left: 3rem;
     right: 3rem;
@@ -14071,16 +14060,16 @@ footer .copyright a {
 }
 
 @media (min-width: 992px) {
-  .about-item-section .trend .about-content {
+  .about-item-section .trend a .about-content {
     top: 11.4rem;
-    left: 2rem;
-    right: 2rem;
+    left: 1rem;
+    right: 1rem;
     padding: 18px 0px;
   }
 }
 
 @media (min-width: 1200px) {
-  .about-item-section .trend .about-content {
+  .about-item-section .trend a .about-content {
     top: 16.4rem;
     left: 2rem;
     right: 2rem;
@@ -14125,6 +14114,11 @@ footer .copyright a {
   border-radius: 0;
 }
 
+.contact-page-section .form-group button:hover {
+  background-color: #ECD9D9;
+  color: #fff;
+}
+
 .info-section {
   padding: 63px 0;
 }
@@ -14157,6 +14151,11 @@ footer .copyright a {
   letter-spacing: 0.5px;
   text-decoration: none;
   font-weight: 400;
+}
+
+.error-page-section a:hover {
+  background-color: #ECD9D9;
+  color: #1E1E1E;
 }
 
 @media (min-width: 568px) {
